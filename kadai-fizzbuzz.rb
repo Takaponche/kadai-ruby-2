@@ -3,13 +3,13 @@ num_max = 100
 #FizzBuzzに該当するか条件チェック
 def fizzbuzz(num)
   if num % 3 == 0 && num % 5 == 0
-    puts "FizzBuzz"
+    num = "FizzBuzz"
   elsif num % 3 == 0
-    puts "Fizz"
+    num = "Fizz"
   elsif num % 5 == 0
-    puts "Buzz"
+    num = "Buzz"
   else
-    puts num
+    return num
   end
 end
 
@@ -17,7 +17,7 @@ end
 num = 1
 
 while num <= num_max
-  fizzbuzz(num)
+  puts fizzbuzz(num)
   num += 1
 end
 
